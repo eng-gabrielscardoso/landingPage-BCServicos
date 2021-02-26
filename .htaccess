@@ -1,0 +1,15 @@
+# Bloquear acesso para agentes externos
+# Não deve estar na raiz de public_html
+#<files ~ "^.*\.([Hh][Tt][Aa]")
+#    order allow,deny
+#    deny from all
+#    satisfy all
+#</files>
+
+# Reescrita para configuração de URL
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+Options -Indexes
