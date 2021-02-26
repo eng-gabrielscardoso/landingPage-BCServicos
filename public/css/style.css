@@ -1,0 +1,317 @@
+@font-face{
+    src: url('../assets/fonts/OpenSans-Light.ttf');
+    font-family: 'Open sans';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans';
+}
+
+html,body{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+div.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header{
+    width: 100%;
+    padding: 5px 0;
+    background-color: #315468;
+}
+
+header > div.container{
+    display: flex;
+    width: 100%;
+}
+
+header div.logotype{
+    margin: 0;
+    padding: 5px;
+    transition: 0.4s;
+}
+
+header div.social-medias{
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 20px;
+}
+
+header div.social-medias h2 i{
+    margin: 0 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header div.social-medias h2 i:hover{
+    font-size: 32px;
+}
+
+header div.logotype:hover{
+    margin: 0;
+    padding: 5px;
+    transition: 0.4s;
+}
+
+header div.logotype h2 a{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+header div.logotype h2 a:hover{
+    padding: 5px;
+    color: #315468;
+    background-color: white;
+    transition: 0.4s;
+}
+
+
+section.banner{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    filter: grayscale(20%);
+    background-image: url('../assets/images/banner-home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.banner div.headline{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px 40px;
+    background-color: rgba(228, 228, 228, 0.6);
+}
+
+section.banner div.headline h2{
+    padding-bottom: 10px;
+}
+
+section.banner div.headline ul{
+    list-style-position: inside;
+}
+
+section.banner div.form-wrapper{
+    position: absolute;
+    right: 10%;
+    top: -10px;
+    width: 100%;
+    height: 730px;
+    max-width: 450px;
+    padding: 15px;
+    text-align: center;
+    background-color: #dddddd;
+    border: 10px solid rgba(255, 255, 255, 0.3);
+}
+
+section.banner div.form-wrapper form h2{
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+section.banner div.form-wrapper form div.group-input,
+section.banner div.form-wrapper form div.group-input label,
+section.banner div.form-wrapper form div.group-input input{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    text-align: left;
+}
+
+section.banner div.form-wrapper form div.group-input input{
+    height: 38px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+section.banner div.form-wrapper form div.group-input input:focus{
+    border: 1px solid #315468; 
+}
+
+section.banner div.form-wrapper form p{
+    width: 100%;
+    margin-top: 30px;
+    font-size: 13px;
+    text-align: left;
+}
+
+section.banner div.form-wrapper form input[type=submit]{
+    width: 85%; 
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 5px solid #253f4e;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background-color:  #315468;
+}
+
+section.info {
+    width: 100%;
+    text-align: center;
+    background-color: #dddddd;
+}
+
+section.info h1{
+    padding: 40px 0 20px 0;
+    font-size: 26px;
+}
+
+section.info h2{
+    position: relative;
+    bottom: -30px;
+    font-size: 50px;
+    color: #315468;
+}
+
+section.info p{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+section.diferentials h1{
+    padding-top: 50px;
+    text-align: center;
+}
+
+section.diferentials > div.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+section.diferentials div.group-diferential{
+    width: calc(100%/3);
+    margin-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+section.diferentials div.group-diferential h1{
+    font-size: 50px;
+    color: #315468;
+}
+
+section.diferentials div.group-diferential h3{
+    color: #253f4e;
+}
+
+section.diferentials div.group-diferential p{
+    font-size: 15px;
+}
+
+footer{
+    padding: 5px 0;
+    border-top: 2px solid #315468;
+}
+
+footer p{
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+    section.banner div.headline{
+        left: 5%;
+    }
+
+    section.banner div.form-wrapper{
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 1040px){
+    section.banner div.headline{
+        left: 2%;
+    }
+
+    section.banner div.form-wrapper{
+        right: 2%;
+    }
+}
+
+@media screen and (max-width: 974px){
+    header > div.container{
+        padding: 0 4%;
+        justify-content: space-between;
+    }
+
+    section.banner {
+        height: auto;
+    }
+    
+    section.banner > div.container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    section.banner div.headline,
+    section.banner div.form-wrapper{
+        position: static;
+        margin: 10px auto;
+    }
+
+    section.banner div.form-wrapper{
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    section.diferentials > div.container{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    section.diferentials div.group-diferential{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    section.diferentials div.group-diferential:last-child{
+        margin-bottom: 40px;
+    }
+
+    section.info > div.container{
+        padding: 0 4%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    div.container{
+        padding: 0 4%;
+    }
+
+    section.banner div.form-wrapper form h2{
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 408px){
+    section.banner div.headline h2{
+        text-align: center;
+    }
+}
