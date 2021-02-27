@@ -19,7 +19,7 @@
     <!-- Title -->
     <title><?php echo ENTERPRISE_NAME.' | '.ENTERPRISE_DESC; ?></title>
 </head>
-<body>
+<body class="fadeIn">
     <header>
         <div class="container">
             <div class="logotype">
