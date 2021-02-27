@@ -1,7 +1,3 @@
-// Atualizar para receber o efeito animado quando dar scroll
-const diferentialsWrapper = document.getElementById('diferentialsWrapper');
-
-
 const formElement = document.getElementById('formElement');
 const nameForm = document.getElementById('nameForm');
 const emailForm = document.getElementById('emailForm');
