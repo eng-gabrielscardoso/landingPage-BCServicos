@@ -18,7 +18,7 @@
     <!-- Essential links -->
     <link rel="stylesheet" href="public/css/style.css">
     <!-- Title -->
-    <title>BC Serviços | Gráfica rápida e informática</title>
+    <title><?php echo ENTERPRISE_NAME.' | '.ENTERPRISE_DESC; ?></title>
 </head>
 <body>
     <header>
