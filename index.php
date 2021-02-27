@@ -1,5 +1,4 @@
 <?php require_once('private/config.php'); ?>
-<!-- Fazer integração do site com a biblioteca CSS AnimateCSS -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
