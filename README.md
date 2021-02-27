@@ -6,7 +6,7 @@ Feita utilizando somente as tecnologias:
 - Javascript
 - PHP7
 
-Ainda, foram-se utilizadas as *library*:
+Ainda, foi-se utilizada a *library*:
 - PHPMailer
 
 Otimizada para os navegadores modernos, integrada com disparos de e-mails e com configurações adicionais para remodelação para seu próprio negócio!
