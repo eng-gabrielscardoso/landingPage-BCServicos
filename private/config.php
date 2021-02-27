@@ -34,6 +34,7 @@
 
     # Configurações da empresa
     define('ENTERPRISE_NAME', 'BC Serviços');
+    define('ENTERPRISE_DESC', 'Gráfica rápida e informática');
     define('GENDER_ENTERPRISE_UPPERCASE', 'A');
     define('GENDER_ENTERPRISE_LOWCASE', 'a');
     define('ENTERPRISE_ADDRESS', 'Av. Jaime Dias, 256, Barcarena/PA');  
