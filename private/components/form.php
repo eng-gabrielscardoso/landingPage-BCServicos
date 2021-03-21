@@ -1,10 +1,12 @@
 <?php
+    require_once('../config.php');
+
     if(isset($_POST['submitForm'])){
         if($_POST['nameForm'] != '' && $_POST['emailForm'] != '' && $_POST['phoneForm'] != ''){
             $email = $_POST['emailForm'];
             if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-                $Mailer = new Mailer(,,,);
-                $Mailer->addAddress(,);
+                $Mailer = new Mailer(HOST_MAILER,USER_MAILER,PASS_MAILER,NAME_MAILER);
+                $Mailer->addAddress(USER_MAILER,NAME_MAILER);
 
                 $name = addslashes($_POST['nameForm']);
                 $email = addslashes($_POST['emailForm']);
