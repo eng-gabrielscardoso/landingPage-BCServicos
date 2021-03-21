@@ -18,14 +18,19 @@
                 $Mailer->settingsMail($info);
                 if($Mailer->sendMail()){
                     echo '<script>alert("Mensagem enviada!");</script>';
+                    header('Location: '.INCLUDE_PATH);
                 }else{
                     echo '<script>alert("Desculpe! Ocorreu um erro.");</script>';
+                    header('Location: '.INCLUDE_PATH);
                 };
             }else{
                 echo '<script>alert("Não é um e-mail válido!");</script>';
+                header('Location: '.INCLUDE_PATH);
             };
         }else{
             echo '<script>alert("Campos vazios não são permitidos!");</script>';
+            header('Location: '.INCLUDE_PATH);
         };
     };
+
 ?>

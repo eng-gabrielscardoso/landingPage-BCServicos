@@ -12,6 +12,7 @@
     <meta name="keywords" content="">
     <meta name="robots" content="index,follow">
     <!-- External links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Essential links -->
     <link rel="stylesheet" href="public/css/style.css">
@@ -45,7 +46,7 @@
                 </ul>
             </div><!-- headline -->
             <div class="form-wrapper" id="formWrapper">
-                <form method="POST" id="form">
+                <form method="POST" id="form" action="private/components/form.php">
                     <h2>Preencha o formulário e peça seu orçamento!</h2>
                     <div class="group-input">
                         <label for="nameForm">Nome*</label>
@@ -62,7 +63,6 @@
                     <p>* Campos obrigatório</p>
                     <input type="submit" value="Enviar" id="submitForm" name="submitForm">
                 </form>
-            <?php require_once('private/components/form.php'); ?>
             </div><!-- form-wrapper -->
         </div><!-- container -->
     </section><!-- banner -->
