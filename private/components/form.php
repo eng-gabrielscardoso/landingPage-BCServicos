@@ -3,8 +3,8 @@
         if($_POST['nameForm'] != '' && $_POST['emailForm'] != '' && $_POST['phoneForm'] != ''){
             $email = $_POST['emailForm'];
             if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-                $Mailer = new Mailer('smtp.gmail.com','eng.gabrielscardoso@gmail.com','54321Plyns','Gabriel Santos Cardoso');
-                $Mailer->addAddress('eng.gabrielscardoso@gmail.com','Gabriel Santos Cardoso');
+                $Mailer = new Mailer(,,,);
+                $Mailer->addAddress(,);
 
                 $name = addslashes($_POST['nameForm']);
                 $email = addslashes($_POST['emailForm']);
